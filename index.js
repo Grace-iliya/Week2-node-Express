@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 app.use(express.json()); // This allows the app to read data
+app.use(express.static('public'));
 
 // 1. GET / -> "My Week 2 API!"
 app.get('/', (req, res) => {
